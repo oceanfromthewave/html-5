@@ -1,0 +1,15 @@
+<script>
+    //함수를 선언합니다.
+    function callTenTimes(callback){
+        //10회 반복
+        for (var i = 0; i< 10; i++){
+            callback();
+
+        }
+    }
+
+    var callback = function(){
+        alert('함수호출');
+    };
+    callTenTimes (callback);
+</script>

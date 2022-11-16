@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>카드 만들기</title>
+    <style>
+        /* box 설정 */
+        .box {                        
+            width: 165px; 
+            text-align: center;
+            padding: 0px 50px; /* 박스 위 아래 너비 설정 */
+            border-radius: 6px 6px 6px 6px; /* 박스 모서리를 둥글게 */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);/* 박스 그림자 설정 */
+            display: grid; /* box를 한칸으로 묶기위해 설정 */          
+        }
+        /* img 의 위치를 조정하기 위한 class */
+        .center{
+            margin: 35px;
+        }
+    </style>
+    
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('img').attr({
+                src: function (index) {
+
+                    var size = (index + 1) * 100;
+
+                    return 'http://place-hold.it/' + size + 'x100';
+                }
+            });
+        });
+    </script>
+</head>
+<body>    
+        <div class="box">
+            <h1>Card</h1>
+            <img class="center">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, nam.
+            </p>
+        </div>    
+</body>
+</html>

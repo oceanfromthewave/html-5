@@ -1,0 +1,12 @@
+<script>
+    var f = function (x,callback){
+        callback(x*x);
+
+    }
+    var f2 = callback = function (result){
+        alert(result);
+    };
+
+    f (3,callback);
+    f (4, alert);
+</script>

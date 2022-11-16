@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>condition_duplication</title>
+        <script>
+            var date = new Date();
+            var hours = date.getHours();
+
+            if(hours<5){
+                alert('잠을자렴....');
+            } else{
+                if(hours<7){
+                    alert('준비');
+                }else{
+                    if(hours<9){
+                        alert('출근');
+                    }else {
+                        if(hours<12){
+                            alert('빈둥빈둥');
+                        }else{
+                            if(hours<14){
+                                alert('식사');
+                            }else{
+                                //여러가지 업무를 수행합니다.
+                            }
+                        }
+                    }
+
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>

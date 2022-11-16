@@ -1,0 +1,17 @@
+<ul id="app">
+   <li v-for="item in items">{{ item.message }}</li>
+</ul>
+<script src="https://unpkg.com/vue@2.7.13"></script>
+<script>
+ new Vue({
+    el:'#app',
+    data: {
+        items: [
+        { message: 'Vue.js'},
+        { message: 'Hanbit Media'}
+    ]
+    }
+
+
+});
+</script>

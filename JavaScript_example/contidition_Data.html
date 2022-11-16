@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contidition_Data</title>
+        <script>
+         //Date 객체를 선언: 현재 시간 측정
+         var date = new Date();
+         //요소 추출
+         var Year = date.getFullYear();
+         var month = date.getMonth() + 1;
+         var day = date.getDate();
+         var hours = date.getHours();
+         var minutes = date.getMinutes();
+         var seconds = date.getSeconds();
+         console.log(Year,month,day,hours,minutes,seconds);
+
+         if(hours < 12){
+            alert('오전입니다');
+         }
+
+         if(12<= hours){
+            alert('오후입니다');
+         }
+         
+        
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
