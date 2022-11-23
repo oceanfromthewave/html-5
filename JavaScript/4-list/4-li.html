@@ -1,0 +1,15 @@
+<ul>
+  <!-- ol: ordered list-->
+  <!-- ul: unordered list-->
+  <li></li>
+  <li></li>
+  <li></li>
+ 
+</ul>
+<script>
+const todos = ['우유구매', '업무 메일 확인하기', '필라테스 수업']
+ let items = document.querySelectorAll('li');
+for(let [i,li] of items.entries()) {
+    li.innerText = `${i + 1}번째 할 일: ${todos[i]}`;
+}
+</script>

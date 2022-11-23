@@ -1,0 +1,30 @@
+<script>
+  // 변수를 선언합니다.
+  //   const ms = Date.parse("2022-11-22 12:23:00");
+  const ms = Date.now(); // 현재 시간을 밀리초로 가져옵니다.
+  const date = new Date(ms - 30 * 60 * 1000);
+  const hour = date.getHours();
+  const minutes = date.getMinutes();
+
+  // 조건문
+  switch (true) {
+    case hour < 9:
+      alert("아침 먹을 시간입니다.");
+      break;
+    case hour == 11 && minutes >= 50:
+    case hour == 12:
+      alert("점심 먹을 시간입니다.");
+      break;
+    case hour == 16 && minutes >= 50:
+    case hour >= 17:
+      alert("저녁 시간 입니다.");
+      break;
+    case minutes >= 50:
+      alert("쉬는 시간 입니다.");
+      break;
+
+    default:
+      alert("강의 시간 입니다.");
+      break;
+  }
+</script>

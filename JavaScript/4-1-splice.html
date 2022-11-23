@@ -1,0 +1,12 @@
+<script>
+    const array = ['사과','배','바나나','사과','배','바나나'];
+    while(true) {
+        var index = array.indexOf('바나나');
+        if(index===-1){
+            break;
+        }
+        array.splice(index, 1);
+    }
+    document.write(array);
+           
+</script>

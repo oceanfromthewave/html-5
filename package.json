@@ -3,5 +3,26 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.55.0"
-  }
+  },
+  "name": "html5",
+  "description": "```JavaScript\r 273\r 10 + 20 + 30 * 2\r 'JavaScript'\r ```",
+  "version": "1.0.0",
+  "main": "asd.js",
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oceanfromthewave/html-5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oceanfromthewave/html-5/issues"
+  },
+  "homepage": "https://github.com/oceanfromthewave/html-5#readme"
 }
