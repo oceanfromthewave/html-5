@@ -1,0 +1,16 @@
+<script>
+    function test (){
+        try{
+            alert('A 위치 입니다.');
+            throw '예외 강제 발생';
+        } catch(exception){
+            alert('B 위치 입니다.');
+            return;
+        } finally{
+            alert('C 위치 입니다.');
+        }
+       
+    }
+
+    test();
+</script>
